@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.bottomnav190224.presentation.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_sales"
+        android:name="com.example.bottomnav190224.presentation.ui.sales.SalesFragment"
+        android:label="@string/Sales"
+        tools:layout="@layout/fragment_sales" />
+
+    <fragment
+        android:id="@+id/navigation_basket"
+        android:name="com.example.bottomnav190224.presentation.ui.basket.BasketFragment"
+        android:label="@string/Basket"
+        tools:layout="@layout/fragment_basket" />
+    <fragment
+        android:id="@+id/navigation_catalog"
+        android:name="com.example.bottomnav190224.presentation.ui.catalog.CatalogFragment"
+        android:label="@string/Catalog"
+        tools:layout="@layout/fragment_catalog" />
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.bottomnav190224.presentation.ui.profile.ProfileFragment"
+        android:label="@string/Profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

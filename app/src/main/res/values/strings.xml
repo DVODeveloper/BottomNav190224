@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BottomNav190224</string>
+    <string name="title_home">Главная</string>
+    <string name="Catalog">Каталог</string>
+    <string name="Basket">Корзина</string>
+    <string name="Sales">Акции</string>
+    <string name="Profile">Профиль</string>
+    <string name="Имя">Имя</string>
+    <string name="Фамилия">Фамилия</string>
+    <string name="Номер_телефона">Номер телефона</string>
+    <string name="войти">Войти</string>
+    <string name="underlined_text"><![CDATA[условия программы лояльности]]></string>
+</resources>

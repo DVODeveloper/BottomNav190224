@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.ui.authorization.AuthorizationFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutAuthorizationFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:autofillHints="username"
+            android:background="@drawable/edit_text_input_shape"
+            android:hint="@string/Имя"
+            android:inputType="textCapWords"
+            android:padding="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/editTextSurName" />
+
+        <EditText
+            android:id="@+id/editTextSurName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/edit_text_input_shape"
+            android:hint="@string/Фамилия"
+            android:inputType="textCapWords"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:autofillHints="username"
+            android:background="@drawable/edit_text_input_shape"
+            android:hint="@string/Номер_телефона"
+            android:inputType="phone"
+            android:padding="16dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:autofillHints="phone"
+            android:background="@drawable/button_shape"
+            android:text="@string/войти"
+            android:textColor="@color/white"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewBottom1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textViewBottom2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/light_gray"
+        android:gravity="center"
+        android:text="Нажимая кнопку “Войти”, Вы принимаете"/>
+    <TextView
+        android:id="@+id/textViewBottom2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:textColor="@color/light_gray"
+        android:text="@string/underlined_text"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
